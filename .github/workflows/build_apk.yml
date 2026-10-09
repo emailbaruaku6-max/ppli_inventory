@@ -24,6 +24,9 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Generate Android Files
+        run: flutter create . --platforms=android
+
       - name: Get Dependencies
         run: flutter pub get
 
